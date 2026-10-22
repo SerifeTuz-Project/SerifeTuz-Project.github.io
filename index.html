@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Şerife Tuz — Product Manager</title>
+<meta name="description" content="Şerife Tuz — Product Manager & Growth Lead. Co-founder of Matchfluence. Building products from zero to first paying users.">
+<meta property="og:title" content="Şerife Tuz — Product Manager">
+<meta property="og:description" content="Product, growth & go-to-market. Co-founder of Matchfluence.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#08080a; --bg2:#0e0e12; --card:#111116; --line:#1f1f27; --line2:#2a2a35;
+  --text:#c8c8d0; --muted:#7a7a88; --white:#f2f2f5;
+  --accent:#7ee2a8; --accent-dim:rgba(126,226,168,.12);
+  --mono:"JetBrains Mono",ui-monospace,monospace; --sans:Inter,system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(900px 600px at 70% 10%,rgba(126,226,168,.06),transparent 60%),
+  linear-gradient(var(--line) 1px,transparent 1px) 0 0/100% 64px;opacity:.5;mask:linear-gradient(#000,transparent 70%)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+.mono{font-family:var(--mono)}
+.accent{color:var(--accent)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(8,8,10,.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:var(--mono);font-size:14px;color:var(--white);font-weight:600}
+.logo span{color:var(--accent)}
+.links{display:flex;gap:28px;font-family:var(--mono);font-size:13px;color:var(--muted)}
+.links a:hover{color:var(--white)}
+.links a::before{content:"/ ";color:var(--line2)}
+.status{font-family:var(--mono);font-size:12px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.4}}
+
+/* hero */
+.hero{min-height:calc(100vh - 60px);display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:center;padding:64px 0}
+.kicker{font-family:var(--mono);font-size:13px;color:var(--muted);margin-bottom:20px}
+.kicker b{color:var(--accent);font-weight:500}
+h1{font-size:clamp(48px,7vw,88px);line-height:1;color:var(--white);font-weight:800;letter-spacing:-.03em;margin-bottom:24px}
+.role{font-family:var(--mono);font-size:16px;color:var(--text);margin-bottom:12px}
+.role .sep{color:var(--line2);margin:0 8px}
+.role .accent{font-weight:500}
+.loc{font-family:var(--mono);font-size:13px;color:var(--muted);margin-bottom:28px}
+.intro{max-width:560px;color:var(--muted);font-size:16px;margin-bottom:36px}
+.intro strong{color:var(--accent);font-weight:500}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{font-family:var(--mono);font-size:13px;padding:13px 22px;border-radius:8px;border:1px solid var(--line2);color:var(--text);transition:.2s;display:inline-flex;gap:8px;align-items:center}
+.btn:hover{border-color:var(--accent);color:var(--white)}
+.btn.primary{background:var(--accent);color:#06140c;border-color:var(--accent);font-weight:600}
+.btn.primary:hover{box-shadow:0 0 30px rgba(126,226,168,.35);color:#06140c}
+.avatar{justify-self:center;width:min(380px,80vw);aspect-ratio:1;border-radius:50%;position:relative;
+  background:radial-gradient(circle at 30% 25%,#1d2a23,#0d0f0e 70%);border:1px solid var(--line2);
+  box-shadow:0 0 0 10px rgba(126,226,168,.04),0 0 80px rgba(126,226,168,.12);display:grid;place-items:center;overflow:hidden}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.avatar .init{font-size:clamp(80px,12vw,140px);font-weight:800;letter-spacing:-.04em;color:var(--white)}
+.avatar .init span{color:var(--accent)}
+.avatar::after{content:"";position:absolute;inset:-1px;border-radius:50%;border:1px solid transparent;
+  background:conic-gradient(from 0deg,var(--accent),transparent 30%,transparent 70%,var(--accent)) border-box;
+  -webkit-mask:linear-gradient(#000 0 0) padding-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:spin 8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* sections */
+section{padding:110px 0;border-top:1px solid var(--line)}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--muted);margin-bottom:16px;display:flex;align-items:center;gap:12px}
+.label::before{content:"";width:32px;height:1px;background:var(--accent)}
+.label b{color:var(--accent);font-weight:500}
+h2{font-size:clamp(32px,4.5vw,52px);color:var(--white);font-weight:800;letter-spacing:-.025em;line-height:1.1;margin-bottom:14px}
+h2 .accent{font-family:var(--sans)}
+.sub{color:var(--muted);max-width:620px;margin-bottom:56px}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:56px}
+.about-grid p{margin-bottom:18px;font-size:16.5px}
+.about-grid p strong{color:var(--white);font-weight:600}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-content:start}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.stat b{display:block;font-size:34px;color:var(--white);font-weight:800;letter-spacing:-.02em}
+.stat b span{color:var(--accent)}
+.stat small{font-family:var(--mono);font-size:12px;color:var(--muted)}
+
+/* experience */
+.timeline{position:relative;padding-left:32px}
+.timeline::before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:1px;background:linear-gradient(var(--accent),var(--line) 40%)}
+.job{position:relative;padding-bottom:44px}
+.job::before{content:"";position:absolute;left:-31px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.job-head{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:4px}
+.job h3{font-size:20px;color:var(--white);font-weight:700}
+.job .date{font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+.job .pos{font-family:var(--mono);font-size:13.5px;color:var(--accent);margin-bottom:14px}
+.job ul{list-style:none}
+.job li{position:relative;padding-left:20px;margin-bottom:8px;color:var(--text)}
+.job li::before{content:"→";position:absolute;left:0;color:var(--muted);font-family:var(--mono);font-size:13px}
+.job li strong{color:var(--white);font-weight:600}
+
+/* projects */
+.projects{display:grid;gap:28px}
+.proj{display:grid;grid-template-columns:1.1fr 1fr;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.3s}
+.proj:hover{border-color:var(--line2);transform:translateY(-3px);box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.proj:nth-child(even) .shot{order:2}
+.shot{position:relative;background:#0b0b0e;min-height:300px;overflow:hidden;border-right:1px solid var(--line)}
+.proj:nth-child(even) .shot{border-right:0;border-left:1px solid var(--line)}
+.shot .bar{position:absolute;top:0;left:0;right:0;height:30px;background:#16161c;display:flex;align-items:center;gap:6px;padding:0 12px;z-index:2;border-bottom:1px solid var(--line)}
+.shot .bar i{width:9px;height:9px;border-radius:50%;background:#2c2c36}
+.shot .bar em{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--muted);margin-left:10px}
+.shot img{position:absolute;top:30px;left:0;width:100%;height:calc(100% - 30px);object-fit:cover;object-position:top;transition:transform .6s}
+.proj:hover .shot img{transform:scale(1.03)}
+.shot.mf{background:radial-gradient(circle at 50% 45%,#2a2560,#15132e 70%);display:grid;place-items:center}
+.shot.mf img{position:static;width:auto;height:150px;object-fit:contain;filter:drop-shadow(0 10px 40px rgba(157,145,229,.5))}
+.shot.mf .tags{position:absolute;bottom:22px;left:0;right:0;display:flex;justify-content:center;gap:8px;font-family:var(--mono);font-size:11px}
+.shot.mf .tags span{padding:5px 10px;border-radius:20px;background:rgba(255,255,255,.06);color:#c9c3f2;border:1px solid rgba(157,145,229,.3)}
+.proj-body{padding:36px}
+.proj-type{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;color:var(--accent);margin-bottom:10px}
+.proj h3{font-size:26px;color:var(--white);font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+.proj p{color:var(--muted);font-size:15px;margin-bottom:18px}
+.impact{font-family:var(--mono);font-size:12.5px;color:var(--text);background:var(--accent-dim);border-left:2px solid var(--accent);padding:10px 14px;border-radius:0 6px 6px 0;margin-bottom:18px}
+.impact b{color:var(--accent);font-weight:500;margin-right:6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.chip{font-family:var(--mono);font-size:11.5px;padding:5px 10px;border-radius:6px;border:1px solid var(--line2);color:var(--text);background:var(--bg2)}
+.visit{font-family:var(--mono);font-size:13px;color:var(--white);border-bottom:1px solid var(--accent);padding-bottom:2px}
+.visit:hover{color:var(--accent)}
+
+/* stack */
+.stack{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px;transition:.25s}
+.box:hover{border-color:rgba(126,226,168,.35)}
+.box .n{font-family:var(--mono);font-size:12px;color:var(--accent);margin-bottom:12px}
+.box h3{color:var(--white);font-size:19px;font-weight:700;margin-bottom:8px}
+.box p{color:var(--muted);font-size:14.5px;margin-bottom:18px}
+.box .chip{color:var(--accent);border-color:rgba(126,226,168,.25);background:var(--accent-dim)}
+.edu{margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.edu div{border:1px dashed var(--line2);border-radius:12px;padding:18px 20px}
+.edu b{display:block;color:var(--white);font-size:15px;font-weight:600}
+.edu small{font-family:var(--mono);font-size:12px;color:var(--muted)}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:860px}
+.c{display:flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;transition:.2s}
+.c:hover{border-color:var(--accent);transform:translateX(4px)}
+.c .ic{font-family:var(--mono);font-size:13px;color:var(--accent);width:38px;height:38px;border-radius:8px;background:var(--accent-dim);display:grid;place-items:center;flex:none}
+.c b{display:block;color:var(--white);font-size:15px;font-weight:600}
+.c small{font-family:var(--mono);font-size:12px;color:var(--muted);word-break:break-all}
+.c .arr{margin-left:auto;color:var(--muted);font-family:var(--mono)}
+.seeking{margin-top:28px;font-family:var(--mono);font-size:13px;color:var(--muted);display:flex;align-items:center;gap:10px}
+
+footer{border-top:1px solid var(--line);padding:32px 0;font-family:var(--mono);font-size:12px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}*{animation:none!important}}
+
+@media (max-width:860px){
+  .links{display:none}
+  .hero{grid-template-columns:1fr;text-align:left;padding:48px 0;min-height:auto}
+  .avatar{order:-1;width:200px;justify-self:start}
+  .about-grid,.proj,.stack,.contact-grid,.edu{grid-template-columns:1fr}
+  .proj:nth-child(even) .shot{order:0;border-left:0}
+  .shot{border-right:0;border-bottom:1px solid var(--line);min-height:220px}
+  .proj-body{padding:26px}
+  section{padding:80px 0}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#" class="logo">serife.tuz<span> ~</span></a>
+    <div class="links">
+      <a href="#about">about</a><a href="#experience">experience</a><a href="#work">work</a><a href="#stack">stack</a><a href="#contact">contact</a>
+    </div>
+    <div class="status"><span class="dot"></span>open to work</div>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <header class="hero" id="top">
+    <div>
+      <p class="kicker">— <b>building</b> products people actually use</p>
+      <h1>Şerife<br>Tuz</h1>
+      <p class="role"><span class="accent">Product Manager</span><span class="sep">|</span>Growth &amp; GTM</p>
+      <p class="loc">@ Istanbul, Türkiye — Remote / Global</p>
+      <p class="intro">Business graduate turned product builder. I take products from idea to first paying users — <strong>co-founded a SaaS marketplace</strong>, managed <strong>~$1M/month</strong> campaign budgets, grew a <strong>5,000+ member</strong> community, and ship production websites end-to-end.</p>
+      <div class="btns">
+        <a href="#work" class="btn primary">view work →</a>
+        <a href="assets/Serife_Tuz_CV.pdf" class="btn" download>download résumé ↓</a>
+      </div>
+    </div>
+    <div class="avatar" aria-label="Şerife Tuz">
+      <!-- To use a photo: put it in assets/photo.jpg and replace the line below with <img src="assets/photo.jpg" alt="Şerife Tuz"> -->
+      <div class="init">Ş<span>T</span></div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="label rv"><b>01</b> — ABOUT</div>
+    <h2 class="rv">Business mind, <span class="accent">builder hands</span></h2>
+    <p class="sub rv">I sit where users, data and execution meet.</p>
+    <div class="about-grid">
+      <div class="rv">
+        <p>I studied business at <strong>Istanbul University (AACSB)</strong> and spent my early career in PR, influencer and community marketing — in Dubai and Istanbul, for brands like <strong>Bitfinex and Tether</strong>. That taught me how real users discover, trust and adopt a product.</p>
+        <p>Today I put that to work as a product person. At <strong>Matchfluence</strong> I own the product from zero: positioning, roadmap, pricing, go-to-market and the feedback loop with both brands and creators.</p>
+        <p>I also design and ship production websites for small businesses — scoping, information architecture, copy, SEO/AEO and deployment — using <strong>Next.js, Vercel and AI-assisted development</strong>. Data-backed decisions come from Python, SQL and GA4.</p>
+      </div>
+      <div class="stats rv">
+        <div class="stat"><b>3<span>+</span></b><small>years experience</small></div>
+        <div class="stat"><b>$1M<span>/mo</span></b><small>budget managed</small></div>
+        <div class="stat"><b>5K<span>+</span></b><small>community grown</small></div>
+        <div class="stat"><b>200<span>%</span></b><small>ROI improvement</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="label rv"><b>02</b> — EXPERIENCE</div>
+    <h2 class="rv">where I've <span class="accent">built</span></h2>
+    <p class="sub rv">From global campaigns to founding my own product.</p>
+    <div class="timeline">
+      <div class="job rv">
+        <div class="job-head"><h3>Matchfluence</h3><span class="date">2025 – Present</span></div>
+        <div class="pos">Co-Founder · Product &amp; Growth Lead · Istanbul</div>
+        <ul>
+          <li>Launched a two-sided <strong>B2B/B2C SaaS marketplace</strong> matching brands with creators — from zero to <strong>first paying clients within 3 months</strong>.</li>
+          <li>Own product positioning, roadmap, pricing and GTM; run onboarding flows and early-access programs for both sides.</li>
+          <li>Track funnel and retention in GA4 and turn insights into roadmap priorities.</li>
+        </ul>
+      </div>
+      <div class="job rv">
+        <div class="job-head"><h3>Independent</h3><span class="date">2025 – Present</span></div>
+        <div class="pos">Product &amp; Web Builder · Freelance</div>
+        <ul>
+          <li>Scope, design and ship production websites for small businesses end-to-end — discovery, IA, copy, build, SEO and deploy.</li>
+          <li>Built AI-search (AEO/GEO) ready sites with structured data, blogs and conversion-focused flows.</li>
+        </ul>
+      </div>
+      <div class="job rv">
+        <div class="job-head"><h3>The Steve Group Co.</h3><span class="date">2024 – 2025</span></div>
+        <div class="pos">Marketing Specialist · Istanbul · Client: Bitfinex &amp; Tether</div>
+        <ul>
+          <li>Led <strong>Turkish-market localization</strong> — product messaging, UX copy and brand content for local users.</li>
+          <li>Grew the local community to <strong>5,000+ members</strong>; organized 2 large events with <strong>300+ attendees</strong>.</li>
+          <li>Ran influencer campaigns end-to-end: creator selection, briefs and performance tracking.</li>
+        </ul>
+      </div>
+      <div class="job rv">
+        <div class="job-head"><h3>WPRO</h3><span class="date">2023 – 2024</span></div>
+        <div class="pos">PR &amp; Influencer Marketing Specialist · Dubai, UAE</div>
+        <ul>
+          <li>Managed a <strong>~$1M monthly budget</strong> across integrated PR and influencer campaigns.</li>
+          <li>Coordinated a simultaneous launch across <strong>100+ influencers and 100+ publishers</strong> — one of the agency's largest.</li>
+          <li>Delivered a <strong>200% ROI improvement</strong> through creator-mix optimization and real-time tracking.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="label rv"><b>03</b> — SELECTED WORK</div>
+    <h2 class="rv">things I've <span class="accent">shipped</span></h2>
+    <p class="sub rv">A SaaS I co-founded and live sites I built for real clients.</p>
+    <div class="projects">
+
+      <article class="proj rv">
+        <div class="shot mf">
+          <img src="assets/matchfluence-logo.png" alt="Matchfluence logo">
+          <div class="tags"><span>brands</span><span>↔</span><span>creators</span></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-type">SAAS · CO-FOUNDER</div>
+          <h3>Matchfluence</h3>
+          <p>A two-sided marketplace that matches brands with the right influencers. Brands clarify their need, see fit scores, then produce and measure campaigns with confidence.</p>
+          <div class="impact"><b>impact</b>0→1 launch · first paying clients in 3 months · founding-creator program</div>
+          <div class="chips"><span class="chip">Product Strategy</span><span class="chip">Marketplace</span><span class="chip">Pricing</span><span class="chip">GTM</span><span class="chip">GA4</span></div>
+          <a class="visit" href="https://matchfluence.com.tr" target="_blank" rel="noopener">matchfluence.com.tr ↗</a>
+        </div>
+      </article>
+
+      <article class="proj rv">
+        <div class="shot">
+          <div class="bar"><i></i><i></i><i></i><em>ibrahimatilla.com</em></div>
+          <img src="assets/ibrahimatilla.jpg" alt="Fzt. İbrahim Atilla website" loading="lazy">
+        </div>
+        <div class="proj-body">
+          <div class="proj-type">CLIENT · HEALTHCARE</div>
+          <h3>Fzt. İbrahim Atilla</h3>
+          <p>Website for a home-visit physiotherapist in Istanbul. Built around his real service model, with a blog and an athlete / competition-prep niche page.</p>
+          <div class="impact"><b>impact</b>AI-search ready · JSON-LD schema · 5-post blog · 16-question FAQ</div>
+          <div class="chips"><span class="chip">Next.js</span><span class="chip">Tailwind</span><span class="chip">SEO / AEO</span><span class="chip">Vercel</span></div>
+          <a class="visit" href="https://www.ibrahimatilla.com" target="_blank" rel="noopener">ibrahimatilla.com ↗</a>
+        </div>
+      </article>
+
+      <article class="proj rv">
+        <div class="shot">
+          <div class="bar"><i></i><i></i><i></i><em>erkanoduncu.com</em></div>
+          <img src="assets/erkanoduncu.jpg" alt="Erkan Oduncu website" loading="lazy">
+        </div>
+        <div class="proj-body">
+          <div class="proj-type">CLIENT · FITNESS</div>
+          <h3>Erkan Oduncu — Coach</h3>
+          <p>Lead-generation site for a personal trainer in Nişantaşı. A free-trial offer, before/after transformations and testimonials, all routing to WhatsApp booking.</p>
+          <div class="impact"><b>impact</b>conversion-first funnel · local SEO · WhatsApp booking</div>
+          <div class="chips"><span class="chip">Landing Page</span><span class="chip">CRO</span><span class="chip">Local SEO</span><span class="chip">Copywriting</span></div>
+          <a class="visit" href="https://erkanoduncu.com" target="_blank" rel="noopener">erkanoduncu.com ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="stack">
+    <div class="label rv"><b>04</b> — CORE STACK</div>
+    <h2 class="rv">what I <span class="accent">work with</span></h2>
+    <p class="sub rv">Four areas I bring to every product.</p>
+    <div class="stack">
+      <div class="box rv"><div class="n">// 01</div><h3>Product Management</h3><p>Turning fuzzy ideas into scoped, prioritized and shipped products.</p>
+        <div class="chips"><span class="chip">Roadmapping</span><span class="chip">PRDs</span><span class="chip">User Research</span><span class="chip">Prioritization</span><span class="chip">Positioning</span></div></div>
+      <div class="box rv"><div class="n">// 02</div><h3>Growth &amp; Go-to-Market</h3><p>Getting products in front of the right users and keeping them.</p>
+        <div class="chips"><span class="chip">GTM Strategy</span><span class="chip">Pricing</span><span class="chip">Acquisition</span><span class="chip">Retention</span><span class="chip">Community</span></div></div>
+      <div class="box rv"><div class="n">// 03</div><h3>Data &amp; Analytics</h3><p>Decisions grounded in funnels, cohorts and experiments.</p>
+        <div class="chips"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">GA4</span><span class="chip">Funnel Analysis</span><span class="chip">Machine Learning</span></div></div>
+      <div class="box rv"><div class="n">// 04</div><h3>Build &amp; Ship</h3><p>Prototyping and shipping real products myself, fast.</p>
+        <div class="chips"><span class="chip">Next.js</span><span class="chip">Tailwind</span><span class="chip">Vercel</span><span class="chip">AI-assisted Dev</span><span class="chip">SEO / AEO</span></div></div>
+    </div>
+    <div class="edu">
+      <div class="rv"><b>Istanbul University</b><small>B.Sc. Business (AACSB) · 2018–2023</small></div>
+      <div class="rv"><b>Miuul</b><small>Data Science &amp; ML Bootcamps · 2023</small></div>
+      <div class="rv"><b>Languages</b><small>Turkish (native) · English (professional)</small></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="label rv"><b>05</b> — CONTACT</div>
+    <h2 class="rv">let's <span class="accent">connect</span></h2>
+    <p class="sub rv">Open to Product Manager and Growth roles — remote or Istanbul.</p>
+    <div class="contact-grid">
+      <a class="c rv" href="assets/Serife_Tuz_CV.pdf" download><span class="ic">CV</span><span><b>Download Résumé</b><small>PDF · always up to date</small></span><span class="arr">↓</span></a>
+      <a class="c rv" href="mailto:serifetuzpc@gmail.com"><span class="ic">@</span><span><b>Email</b><small>serifetuzpc@gmail.com</small></span><span class="arr">→</span></a>
+      <a class="c rv" href="https://linkedin.com/in/serifetuz" target="_blank" rel="noopener"><span class="ic">in</span><span><b>LinkedIn</b><small>/in/serifetuz</small></span><span class="arr">→</span></a>
+      <a class="c rv" href="https://github.com/SerifeTuz-Project" target="_blank" rel="noopener"><span class="ic">gh</span><span><b>GitHub</b><small>github.com/SerifeTuz-Project</small></span><span class="arr">→</span></a>
+    </div>
+    <p class="seeking rv"><span class="dot"></span>Seeking: Product Manager · Growth PM · Product Ops</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap"><span>// built with curiosity &amp; precision — Şerife Tuz © 2026</span><span>single file · no frameworks</span></div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
